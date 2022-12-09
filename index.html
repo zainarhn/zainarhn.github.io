@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      body {
+        background-color: black;
+      }
+
       .form {
         display: flex;
         align-items: center;
@@ -13,21 +17,33 @@
         position: absolute;
         top: 25%;
         left: 37%;
-        background-color: hotpink;
+        background-color: white;
         padding: 30px;
         color: white;
         transition: 1s ease-out;
+        color: black;
       }
 
       .hover {
-        background-color: crimson;
+        background-color: black;
         transition: 1s ease-in;
+        color: white;
+        border: solid 1px white;
       }
 
       input {
         border: none;
         padding: 7px;
         border-radius: 5px;
+        background-color: black;
+        color: white;
+        transition: 1s ease-out;
+      }
+
+      .input {
+        background-color: white;
+        color: black;
+        transition: 1s ease-in;
       }
 
       form {
@@ -40,6 +56,13 @@
         background-color: black;
         color: white;
         padding: 10px;
+        transition: 1s ease-out;
+      }
+
+      .button {
+        background-color: white;
+        color: black;
+        transition: 1s ease-in;
       }
     </style>
     <title>Login</title>
@@ -50,11 +73,11 @@
       <form action="">
         <label for="nama">
           <p>Nama</p>
-          <input type="text" id="nama" name="nama" />
+          <input type="text" id="nama" name="nama" class="inpu" />
         </label>
         <label for="email"
           ><p>Email</p>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" class="inpu" />
         </label>
         <button class="submit">Submit</button>
       </form>
