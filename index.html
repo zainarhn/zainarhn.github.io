@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 25%;
+        left: 37%;
+        background-color: hotpink;
+        padding: 30px;
+        color: white;
+        transition: 1s ease-out;
+      }
+
+      .hover {
+        background-color: crimson;
+        transition: 1s ease-in;
+      }
+
+      input {
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      button {
+        margin-top: 30px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="form">
+      <h3>LOGIN</h3>
+      <form action="">
+        <label for="nama">
+          <p>Nama</p>
+          <input type="text" id="nama" name="nama" />
+        </label>
+        <label for="email"
+          ><p>Email</p>
+          <input type="email" name="email" id="email" />
+        </label>
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
